@@ -1,0 +1,19 @@
+Consignas generales
+• Lenguaje: Python 3.x
+• Estructuras: listas, diccionarios, funciones.
+• Archivos: lectura desde CSV.
+• Código claro, comentado y modularizado (una función = una responsabilidad).
+• Validaciones de entradas y manejo básico de errores.
+• Trabajo en equipos de 2 personas.
+Dominio (dataset de países)
+Cada país estará representado con los siguientes datos:
+• Nombre (string)
+• Población (int)
+• Superficie en km² (int)
+• Continente (string)
+Ejemplo de registro CSV:
+nombre,poblacion,superficie,continente
+Argentina,45376763,2780400,América
+Japón,125800000,377975,Asia
+Brasil,213993437,8515767,América
+Alemania,83149300,357022,Europa 
