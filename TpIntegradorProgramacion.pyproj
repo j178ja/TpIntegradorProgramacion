@@ -30,6 +30,7 @@
     <Compile Include="Funciones\BuscarPorParametro.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Funciones\EliminarElemento.py" />
     <Compile Include="Funciones\LimpiezaPantalla.py" />
     <Compile Include="Funciones\MostrarEstadisticas.py">
       <SubType>Code</SubType>

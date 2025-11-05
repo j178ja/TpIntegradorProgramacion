@@ -1,7 +1,13 @@
 
 
 from Funciones.MostrarTodo import  mostrar_datos
-
+from Funciones.AgregarPais import agregar_pais
+from Funciones.EliminarElemento import eliminar_pais
+from Funciones.ActualizarDatos import actualizar_pais
+from Funciones.BuscarPorParametro import filtrar_paises
+from Funciones.BuscarPorParametro import buscar_pais
+from Funciones.MostrarEstadisticas import mostrar_estadisticas
+from Funciones.MostrarVideo import ver_video
 from Funciones.LimpiezaPantalla import limpiar_pantalla
 
 
@@ -13,28 +19,41 @@ def mostrar_menu():
     print("=== MENU PRINCIPAL ===")
     
     print("1. Mostrar listado completo de Paices")
-    print("1. Agregar un pais")
-    print("2. Actualizar los datos de Poblacion y Superfice de un Pais")
-    print("3. Buscar un pais por nombre (coincidencia parcial o exacta).")
-    print("4. Filtrar paises.")
-    print("5. Mostrar estadisticas.")
-    print("6. Video tutorial.")
+    print("2. Agregar un pais")
+    print("3. Eliminar un Pais")
+    print("4. Actualizar los datos de Poblacion y Superfice de un Pais")
+    print("5. Buscar un pais por nombre (coincidencia parcial o exacta).")
+    print("6. Filtrar paises.")
+    print("7. Mostrar estadisticas.")
+    print("8. Video tutorial.")
     print("0. Salir.")
     
 def ejecutar_opcion(opcion):
     """Llama a la funcion correspondiente segun opcion ingresada"""
     if opcion == '1':
         mostrar_datos()
+
     elif opcion == '2':
-        print("Funcionalidad para actualizar datos de poblacion y superficie.")
+       agregar_pais()
+
     elif opcion == '3':
-        print("Funcionalidad para buscar un pais por nombre.")
+        eliminar_pais()
+
     elif opcion == '4':
-        print("Funcionalidad para filtrar paises.")
+        actualizar_pais()
+
     elif opcion == '5':
-        print("Funcionalidad para mostrar estadisticas.")
+        buscar_pais()
+
     elif opcion == '6':
-        print("Funcionalidad para mostrar video tutorial.")
+         filtrar_paises()
+
+    elif opcion == '7':
+       mostrar_estadisticas()
+
+    elif opcion == '8':
+       ver_video()
+
     elif opcion == '0':
         print("Saliendo de la aplicacion.")
     else:
