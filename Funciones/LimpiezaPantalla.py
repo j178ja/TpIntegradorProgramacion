@@ -5,4 +5,6 @@ def limpiar_pantalla():
     # Windows usa 'cls', Linux/macOS usa 'clear'
     comando = 'cls' if os.name == 'nt' else 'clear'
     os.system(comando)
-   
+  
+    
+

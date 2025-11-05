@@ -1,6 +1,6 @@
 
-
-from Funciones.MostrarTodo import  mostrar_datos
+#importa de carpeta Funciones cada una de las funciones necesarias que se ejecutan en el menu principal
+from Funciones.MostrarTodo import  mostrar_datos                          
 from Funciones.AgregarPais import agregar_pais
 from Funciones.EliminarElemento import eliminar_pais
 from Funciones.ActualizarDatos import actualizar_pais
@@ -30,29 +30,38 @@ def mostrar_menu():
     
 def ejecutar_opcion(opcion):
     """Llama a la funcion correspondiente segun opcion ingresada"""
+
     if opcion == '1':
+        """Llama a la funcion mostrar datos, que exhibe en una tabla la totalidad de los elementos del archivo Csv"""
         mostrar_datos()
 
     elif opcion == '2':
-       agregar_pais()
+        """Llama a la funcion agregar pais, que permite al usuario agregar un nuevo pais al archivo Csv"""
+        agregar_pais()
 
     elif opcion == '3':
+        """Llama a la funcion eliminar pais, que permite al usuario eliminar un pais del archivo Csv"""
         eliminar_pais()
 
     elif opcion == '4':
+        """Llama a la funcion actualizar pais, que permite al usuario actualizar los datos de poblacion y superficie de un pais"""
         actualizar_pais()
 
     elif opcion == '5':
+        """Llama a la funcion buscar pais, que permite al usuario buscar un pais por nombre (coincidencia parcial o exacta)"""
         buscar_pais()
 
     elif opcion == '6':
-         filtrar_paises()
+        """Llama a la funcion filtrar paises, que permite al usuario filtrar los paises segun diferentes parametros"""
+        filtrar_paises()
 
     elif opcion == '7':
-       mostrar_estadisticas()
+        """Llama a la funcion mostrar estadisticas, que exhibe diferentes estadisticas sobre los paises"""
+        mostrar_estadisticas()
 
     elif opcion == '8':
-       ver_video()
+        """Llama a la funcion ver video, que reproduce un video tutorial sobre el uso de la aplicacion"""
+        ver_video()
 
     elif opcion == '0':
         print("Saliendo de la aplicacion.")
@@ -63,7 +72,8 @@ def ejecutar_opcion(opcion):
 salir = False
 while not salir:
     """Bucle principal para mostrar reiteradamente el menu"""
-    # limpiar_pantalla()
+    limpiar_pantalla()
     mostrar_menu()   # muestra el menu de opciones
     opcion = input("\nIngresa tu opcion (1-6) o 0 para Salir: ")
+   
     salir = ejecutar_opcion(opcion) == '0'

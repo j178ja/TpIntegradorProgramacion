@@ -56,14 +56,15 @@
     <Content Include="DB\Datos.csv" />
     <Content Include="DB\Oservacion.txt" />
     <Content Include="README.md" />
-    <Content Include="Requerimientos TP\Consignas.txt" />
-    <Content Include="Requerimientos TP\Objetivos.txt" />
-    <Content Include="Requerimientos TP\Requerimientos tecnicos.txt" />
+    <Content Include="Documentacion\Requerimientos TP\Consignas.txt" />
+    <Content Include="Documentacion\Requerimientos TP\Objetivos.txt" />
+    <Content Include="Documentacion\Requerimientos TP\Requerimientos tecnicos.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Funciones\" />
     <Folder Include="DB\" />
-    <Folder Include="Requerimientos TP\" />
+    <Folder Include="Documentacion\" />
+    <Folder Include="Documentacion\Requerimientos TP\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

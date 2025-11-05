@@ -5,7 +5,7 @@ from tabulate import tabulate # Libreria para mostrar tablas
 def mostrar_datos():
     try:
         # Lee el archivo CSV
-        df = pd.read_csv("DB/Datos.csv", encoding="latin-1") #ruta absoluta del archivo CSV
+        df = pd.read_csv("DB/Datos.csv",  encoding="utf-8") #ruta absoluta del archivo CSV
         # Muestra todo el contenido como tabla
       #  print(df.to_string(index=False))    #muestra la tabla sin la estructura de lineas separadoras
         print(tabulate(df, headers='keys', tablefmt='grid', showindex=False))  #muestra la tabla con lineas separadoras
