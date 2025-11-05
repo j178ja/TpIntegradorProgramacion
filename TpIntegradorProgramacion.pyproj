@@ -21,6 +21,30 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Funciones\ActualizarDatos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funciones\AgregarPais.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funciones\BuscarPorParametro.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funciones\LimpiezaPantalla.py" />
+    <Compile Include="Funciones\MostrarEstadisticas.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funciones\MostrarTodo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funciones\MostrarVideo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funciones\SalidaDigna.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Funciones\ValidacionCaracter.py" />
+    <Compile Include="Funciones\__init__.py" />
     <Compile Include="main.py">
       <SubType>Code</SubType>
     </Compile>
@@ -28,12 +52,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="DB\Datos.csv" />
+    <Content Include="DB\Oservacion.txt" />
     <Content Include="README.md" />
     <Content Include="Requerimientos TP\Consignas.txt" />
     <Content Include="Requerimientos TP\Objetivos.txt" />
     <Content Include="Requerimientos TP\Requerimientos tecnicos.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Funciones\" />
+    <Folder Include="DB\" />
     <Folder Include="Requerimientos TP\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

@@ -1,0 +1,1 @@
+Al momento se emplea archivo CSV  pero se puede cambiar a Sqlite o MySQL si es necesario.
