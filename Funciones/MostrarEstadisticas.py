@@ -3,6 +3,7 @@ import pandas as pd
 from tabulate import tabulate
 import matplotlib.pyplot as plt #para mostrar graficos si es necesario
 
+"""Modulo para mostrar estadisticas generales"""
 def mostrar_estadisticas():
     """Muestra estadísticas generales del archivo Datos.csv"""
     ruta = os.path.join(os.path.dirname(__file__), "..", "DB", "Datos.csv")

@@ -2,6 +2,8 @@
 import pandas as pd
 from tabulate import tabulate
 
+
+"""Modulo para eliminar un pais"""
 def eliminar_pais():
     """Elimina un país y sus datos del archivo Datos.csv"""
     ruta = os.path.join(os.path.dirname(__file__), "..", "DB", "Datos.csv")

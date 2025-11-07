@@ -7,7 +7,6 @@ def actualizar_pais():
     """Actualiza la población y superficie de un país existente en Datos.csv"""
     ruta = os.path.join(os.path.dirname(__file__), "..", "DB", "Datos.csv")
     ruta = os.path.abspath(ruta)
-
     try:
         # Leer CSV con manejo de codificación
         try:

@@ -3,6 +3,7 @@ import os
 import pandas as pd
 from tabulate import tabulate
 
+"""Modulo para buscar y filtrar paises"""
 def filtrar_paises():
     """Filtra países según continente, población o superficie"""
     ruta = os.path.join(os.path.dirname(__file__), "..", "DB", "Datos.csv")

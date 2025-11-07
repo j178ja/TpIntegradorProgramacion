@@ -2,7 +2,9 @@
 import pandas as pd       # Libreria para manejo de datos
 from tabulate import tabulate # Libreria para mostrar tablas
 
+"""Modulo para mostrar la totalidad de los datos"""
 def mostrar_datos():
+    """Muestra la totalidad de los datos del archivo .CSV"""
     try:
         # Lee el archivo CSV
         df = pd.read_csv("DB/Datos.csv",  encoding="utf-8") #ruta absoluta del archivo CSV

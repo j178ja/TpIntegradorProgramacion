@@ -1,6 +1,7 @@
 ﻿import os
 import pandas as pd
 
+"""Modeulo para agregar un nuevo pais"""
 def agregar_pais():
     """Agrega un nuevo país al archivo Datos.csv"""
     ruta = os.path.join(os.path.dirname(__file__), "..", "DB", "Datos.csv")

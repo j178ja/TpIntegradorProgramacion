@@ -41,10 +41,6 @@
     <Compile Include="Funciones\MostrarVideo.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Funciones\SalidaDigna.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Funciones\ValidacionCaracter.py" />
     <Compile Include="Funciones\__init__.py" />
     <Compile Include="main.py">
       <SubType>Code</SubType>
@@ -55,6 +51,7 @@
     <Content Include=".gitignore" />
     <Content Include="DB\Datos.csv" />
     <Content Include="DB\Oservacion.txt" />
+    <Content Include="Documentacion\DocumentacionProyecto.md" />
     <Content Include="README.md" />
     <Content Include="Documentacion\Requerimientos TP\Consignas.txt" />
     <Content Include="Documentacion\Requerimientos TP\Objetivos.txt" />
