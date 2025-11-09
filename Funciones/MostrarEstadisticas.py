@@ -32,16 +32,24 @@ def mostrar_estadisticas():
         # Agrupar por continente
         promedio_por_continente = df.groupby("Continente")["Poblacion"].mean().reset_index()
         promedio_por_continente.rename(columns={"Poblacion": "Poblacion Promedio"}, inplace=True)
+        
+
 
         # Mostrar resumen general
         print(f"\nCantidad total de países: {total_paises}")
-        print(f"Población total: {total_poblacion:,}")
-        print(f"Superficie total: {total_superficie:,} km²")
+        print(f"Población total: {total_poblacion:,.0f}".replace(",", "."))
+        # print(f"Población total: {total_poblacion:,}")
+        print(f"Superficie total: {total_superficie:,.0f}".replace(",", ".") + " km²")
         print(f"País con mayor población: {pais_mayor_pob}")
         print(f"País con menor población: {pais_menor_pob}")
 
         # Mostrar promedio por continente
         print("\n=== Población promedio por continente ===")
+
+        # Formatear los valores del promedio con separador de miles
+        promedio_por_continente["Poblacion Promedio"] = promedio_por_continente["Poblacion Promedio"].apply(
+            lambda x: f"{x:,.0f}".replace(",", ".")
+        )
         print(tabulate(promedio_por_continente, headers='keys', tablefmt='grid', showindex=False))
 
         plt.bar(promedio_por_continente["Continente"], promedio_por_continente["Poblacion Promedio"])
